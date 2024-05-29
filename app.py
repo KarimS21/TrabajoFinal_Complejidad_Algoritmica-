@@ -14,7 +14,7 @@ def home():
         ##hasta aqui deberia funcionar todo bien,
         #de aqui para abajo se debe pensar como representar el resultado en el html
         #para ver que todo funciona, miren la terminal, ahi sale el resultado del algoritmo
-        
+
         if resultados.empty:
             print("No se encontraron resultados.")
         else:
@@ -29,11 +29,6 @@ def home():
         print(mejor_persona[['ID', 'Nombre', 'Apellido']])
         print(f"Cantidad de amigos en común: {num_amigos_comun}")
         print(f"Camino BFS: {mejor_camino}")
-
-
-
-
-
 
 
         return render_template("index.html")
