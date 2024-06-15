@@ -1,24 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login y Registro</title>   
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='estilos.css') }}">
+    <title>Encuentra la Persona</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
     <header>
-
+        <div class="menu-icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Hamburger_icon.svg" alt="Menu">
+        </div>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/github-logo.png') }}" alt="GitHub Logo">
+        </div>
+        <div class="upc-logo">
+            <img src="{{ url_for('static', filename='images/upc-logo.png') }}" alt="UPC Logo">
+        </div>
     </header>
     <main>
-        <form action="/" method="post">
-            <input type="text" id="id_user" placeholder="Ingrese id" name="id_user">
-            <input type="text" id="nombre_Apellido" placeholder="Buscar " name="nombre_Apellido">
-            <button type="submit">Log in</button>
-        </form>
+        <section class="search-section">
+            <h1>¡Encuentra la persona que buscas!</h1>
+            <h2>Selecciona la red social donde quieres realizar la búsqueda:</h2>
+            <div class="social-media-options">
+                <div class="social-media">
+                    <input type="radio" id="instagram" name="social-media" disabled>
+                    <label for="instagram"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"> Instagram <span class="coming-soon">Próximamente...</span></label>
+                </div>
+                <div class="social-media">
+                    <input type="radio" id="facebook" name="social-media" checked>
+                    <label for="facebook"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"> Facebook</label>
+                </div>
+                <div class="social-media">
+                    <input type="radio" id="twitter" name="social-media" disabled>
+                    <label for="twitter"><img src="{{ url_for('static', filename='images/twitter-logo.png') }}" alt="Twitter"> Twitter <span class="coming-soon">Próximamente...</span></label>
+                </div>
+            </div>
+            <form class="search-form" action="results.html">
+                <div class="form-group">
+                    <label for="user-id">Ingrese su ID de usuario</label>
+                    <input type="text" id="user-id" placeholder="Ingrese su ID de usuario">
+                </div>
+                <div class="form-group">
+                    <label for="user-name">Ingrese el nombre o apellido de la persona a buscar</label>
+                    <input type="text" id="user-name" placeholder="Ingrese el nombre o apellido de la persona a buscar">
+                </div>
+                <button type="submit">Realizar Búsqueda</button>
+            </form>
+        </section>
     </main>
     <footer>
-
+        <p>Desarrollado por: Samuel Ignacio Valera Garces</p>
     </footer>
 </body>
 </html>
