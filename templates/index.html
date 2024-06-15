@@ -33,17 +33,17 @@
                 </div>
                 <div class="social-media">
                     <input type="radio" id="twitter" name="social-media" disabled>
-                    <label for="twitter"><img src="{{ url_for('static', filename='images/twitter-logo.png') }}" alt="Twitter"> Twitter <span class="coming-soon">Próximamente...</span></label>
+                    <label for="twitter"><img src="{{ url_for('static', filename='images/twitter-logo.png') }}" alt="Twitter" id="twitterimg"> Twitter <span class="coming-soon">Próximamente...</span></label>
                 </div>
             </div>
-            <form class="search-form" action="results.html">
+            <form class="search-form" action="results" method="post">
                 <div class="form-group">
                     <label for="user-id">Ingrese su ID de usuario</label>
-                    <input type="text" id="user-id" placeholder="Ingrese su ID de usuario">
+                    <input type="text" id="user-id" name="user-id" placeholder="Ingrese su ID de usuario">
                 </div>
                 <div class="form-group">
                     <label for="user-name">Ingrese el nombre o apellido de la persona a buscar</label>
-                    <input type="text" id="user-name" placeholder="Ingrese el nombre o apellido de la persona a buscar">
+                    <input type="text" id="user-name" name="user-name" placeholder="Ingrese el nombre o apellido de la persona a buscar">
                 </div>
                 <button type="submit">Realizar Búsqueda</button>
             </form>

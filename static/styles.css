@@ -65,9 +65,11 @@ main {
 }
 
 .social-media #twitter {
-    width: 180px;
+    width: 100px;
 }
-
+#twitterimg{
+    width: 100px;
+}
 .coming-soon {
     color: red;
     font-size: 0.8em;
