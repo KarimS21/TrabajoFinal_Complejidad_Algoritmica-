@@ -1,7 +1,6 @@
 import pandas as pd
 from collections import deque
 
-
 data = pd.read_csv("ComplejidadAlgoritmicaDF.csv")
 
 class Grafo:
