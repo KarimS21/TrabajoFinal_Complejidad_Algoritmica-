@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados de la Búsqueda</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <header>
+        <div class="menu-icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Hamburger_icon.svg" alt="Menu">
+        </div>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='images/github-logo.png') }}" alt="GitHub Logo">
+        </div>
+        <div class="upc-logo">
+            <img src="{{ url_for('static', filename='images/upc-logo.png') }}" alt="UPC Logo">
+        </div>
+    </header>
+    <main>
+        <section class="results-section">
+            <h1>Resultados de la búsqueda:</h1>
+            <div class="results">
+                <p>Datos ingresados:</p>
+                <p>Persona encontrada:</p>
+                <p>Cantidad de amigos en común:</p>
+                <p>Camino recorrido:</p>
+            </div>
+            <form action="/">
+                <button type="submit">Realizar otra búsqueda</button>
+            </form>
+            
+        </section>
+    </main>
+    <footer>
+        <p>Desarrollado por: Samuel Ignacio Valera Garces</p>
+    </footer>
+</body>
+</html>
