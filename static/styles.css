@@ -3,6 +3,8 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -46,6 +48,10 @@ main {
     color: #333;
 }
 
+.results-section{
+    display: flex;
+    flex-direction: column;
+}
 .social-media-options {
     display: flex;
     justify-content: center;
@@ -111,7 +117,15 @@ footer {
     padding: 1em 0;
     background: #f4f4f4;
     color: #555;
-    position: absolute;
+    
     width: 100%;
     bottom: 0;
+}
+.result-item{
+    background-color: #f0efef;
+    border-style: solid;
+
+}
+.results-section button{
+    margin-top: 10px;
 }
