@@ -124,8 +124,16 @@ footer {
 .result-item{
     background-color: #f0efef;
     border-style: solid;
+    margin: 5px;
 
 }
 .results-section button{
     margin-top: 10px;
+}
+
+.infoUser{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
 }
