@@ -46,11 +46,11 @@ def results():
             'amigos_en_comun': max_amigos_comun if mejor_coincidencia else 'N/A',
             'edad': edad if mejor_coincidencia else 'N/A',
             'gusto': gusto if mejor_coincidencia else 'N/A',
-            'camino': ' -> '.join(mejor_camino) if mejor_camino else 'N/A'
+            'camino': ' -> '.join(mejor_camino) if mejor_camino else 'N/A' 
         }
         resultados.append(resultado)
 
-    return render_template('results.html', resultados=resultados, datos=f'ID de usuario: {user_id}, Nombre: {user_name}')
+    return render_template('results.html', resultados=resultados, datosUser=f'ID de usuario: {user_id}',inputUser= f'Input del usuario: {user_name}')
 
 if __name__ == '__main__':
     app.run(debug=True)

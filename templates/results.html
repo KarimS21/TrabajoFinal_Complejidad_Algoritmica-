@@ -20,6 +20,11 @@
     </header>
     <main>
         <section class="results-section">
+            <h2>Datos ingresados:</h2>
+            <div class="infoUser">
+                <p>{{datosUser}}</p> 
+                <p>{{inputUser}}</p>
+            </div>
             <h1>Resultados de la búsqueda:</h1>
 
             {% if error %}
@@ -31,7 +36,6 @@
             {% else %}
 
                 <div class="results">
-                    <p>Datos ingresados: {{ datos }}</p>
                     {% for resultado in resultados %}
                         <div class="result-item">
                             <p>Persona encontrada: {{ resultado.persona }} (ID: {{ resultado.id }})</p>
